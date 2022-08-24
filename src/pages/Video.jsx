@@ -8,7 +8,7 @@ const Video = () => {
 const [data,setData] = useState({});
   const location = useLocation();
   let queries = queryString.parse(location.search);
-  const url = `http://localhost:5000/data/id?id=${queries.id}`;
+  const url = `https://image-video-uploder-api.herokuapp.com/id?id=${queries.id}`;
 
   useEffect(()=>{
     async function fetchData(){

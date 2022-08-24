@@ -3,7 +3,7 @@ import axios from 'axios';
 import {  Link, useNavigate } from "react-router-dom";
 
 
-const url = "http://localhost:5000/upload"
+const url = "https://image-video-uploder-api.herokuapp.com/upload"
 
 const Home = () => {
   const [data,setData] = useState({

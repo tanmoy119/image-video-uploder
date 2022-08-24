@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const Contents = () => {
-  const fetchUrl = "http://localhost:5000/data";
+  const fetchUrl = "https://image-video-uploder-api.herokuapp.com/data";
   const [data,setData]= useState([]);
 
   useEffect(()=>{
