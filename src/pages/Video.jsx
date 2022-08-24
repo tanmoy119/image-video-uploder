@@ -8,7 +8,7 @@ const Video = () => {
 const [data,setData] = useState({});
   const location = useLocation();
   let queries = queryString.parse(location.search);
-  const url = `https://image-video-uploder-api.herokuapp.com/id?id=${queries.id}`;
+  const url = `https://image-video-uploder-api.herokuapp.com/data/id?id=${queries.id}`;
 
   useEffect(()=>{
     async function fetchData(){
@@ -19,7 +19,7 @@ const [data,setData] = useState({});
 
   fetchData();
   },[url]);
- console.log(data[0]);
+//  console.log(data[0]);
   return (<>
    <div className='flex items-center justify-center font-bold'>video</div>
     <Link to="/">Home</Link><br/>

@@ -11,7 +11,7 @@ const Contents = () => {
   useEffect(()=>{
     async function fetchData(){
       const request = await axios.get(fetchUrl);
-      console.log(request);
+      // console.log(request);
       setData(request.data);
       return request;
   }
@@ -19,7 +19,7 @@ const Contents = () => {
   fetchData();
   },[fetchUrl]);
 
-  console.log(data);
+  // console.log(data);
   return (<>
     <div>contents</div>
     <Link to="/">Home</Link>

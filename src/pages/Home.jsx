@@ -40,7 +40,7 @@ const Home = () => {
 
   const onSubmit = async(event)=>{
     event.preventDefault();
-    console.log(data.photo);
+    // console.log(data.photo);
 
     let formdata = new FormData();
 
@@ -54,9 +54,8 @@ const Home = () => {
       headers: {},
       data:formdata
     });
-    console.log(res);
+    // console.log(res);
     if(res.status===201){
-      //history.push("/contents");
       history("/contents")
     }
     
